@@ -1,0 +1,5 @@
+com\example\oci_student\repository\StudentRepository.class
+com\example\oci_student\controller\StudentController.class
+com\example\oci_student\OciStudentApplication.class
+com\example\oci_student\model\Student.class
+com\example\oci_student\service\StudentService.class
