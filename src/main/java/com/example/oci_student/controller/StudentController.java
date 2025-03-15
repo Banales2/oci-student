@@ -19,9 +19,9 @@ public class StudentController {
     public List<Student> getAllStudents() {
         return studentService.getAllStudents();
     }
-    @GetMapping("/{id}")
-    public ResponseEntity<Student> getStudentById(@PathVariable Long id) {
-        Optional<Student> student = studentService.getStudentById(id);
+    @GetMapping("/{studentId}")
+    public ResponseEntity<Student> getStudentById(@PathVariable String studentId) {
+        Optional<Student> student = studentService.getStudentByStudentId(studentId);
         return student.map(ResponseEntity::ok).orElseGet(() ->
         ResponseEntity.notFound().build());
     }
